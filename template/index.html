@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>file encryption</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>Encrypt and Decrypt File with SM4</h1>
+    <label for="password">PWD: </label><input type="text" id="password" name="password" value="" placeholder="长度16个字符及以上，至少包括大小写字母、数字、特殊符号" size=50/><br>
+  	<form action="http://localhost:5000/upload" id="upLoadfile" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file"  />
+        <input type="submit" value="提交" />
+    </form>
+	<input type="submit" id="upload2enc" value="点我加密" name="upload2enc" />
+	<input type="submit" id="upload2dec" value="点我解密" name="upload2dec" />
+	<input type="submit" id="download" value="点我下载" name="download" />
+	<script src="../static/js/jquery-3.3.1.min.js"></script>
+	<script src="../static/js/upload.js"></script>
+</body>
+</html>
